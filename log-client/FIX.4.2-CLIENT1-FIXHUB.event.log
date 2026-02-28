@@ -99,3 +99,110 @@ java.util.concurrent.RejectedExecutionException: Task org.apache.mina.util.NameP
 20260228-10:50:05: Configured socket addresses for session: [/127.0.0.1:9878]
 20260228-10:50:05: MINA session created: local=/127.0.0.1:63234, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
 20260228-10:50:05: Disconnecting: Encountered END_OF_STREAM
+20260228-10:51:47: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:51:47: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:51:48: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:51:48: MINA session created: local=/127.0.0.1:52999, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-10:51:49: Initiated logon request
+20260228-10:51:49: Received logon
+20260228-12:43:31: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:43:31: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-12:43:32: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-12:43:32: MINA session created: local=/127.0.0.1:50196, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-12:43:33: Initiated logon request
+20260228-12:43:33: quickfix.SessionException MsgSeqNum too low, expecting 178 but received 1
+20260228-12:43:33: Disconnecting: Verifying message failed: quickfix.SessionException: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:02: MINA session created: local=/127.0.0.1:63582, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-12:44:03: Initiated logon request
+20260228-12:44:03: quickfix.SessionException MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:03: Disconnecting: Verifying message failed: quickfix.SessionException: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:32: MINA session created: local=/127.0.0.1:63587, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-12:44:33: Initiated logon request
+20260228-12:44:33: quickfix.SessionException MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:33: Disconnecting: Verifying message failed: quickfix.SessionException: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:45:02: java.net.ConnectException during connection to /127.0.0.1:9878: java.net.ConnectException: Connection refused: getsockopt (Next retry in 30000 milliseconds)
+20260228-12:48:00: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:48:00: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-12:48:01: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-12:48:01: MINA session created: local=/127.0.0.1:54747, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-12:48:02: Initiated logon request
+20260228-12:48:02: Received logon
+20260228-12:54:30: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:54:30: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-12:54:31: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-12:54:31: MINA session created: local=/127.0.0.1:51305, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-12:54:32: Initiated logon request
+20260228-12:54:32: quickfix.SessionException MsgSeqNum too low, expecting 9 but received 1
+20260228-12:54:32: Disconnecting: Verifying message failed: quickfix.SessionException: MsgSeqNum too low, expecting 9 but received 1
+20260228-12:55:01: MINA session created: local=/127.0.0.1:57104, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-12:55:02: Disconnecting: Socket exception (/127.0.0.1:9878): java.net.SocketException: Connection reset
+20260228-12:55:31: java.net.ConnectException during connection to /127.0.0.1:9878: java.net.ConnectException: Connection refused: getsockopt (Next retry in 30000 milliseconds)
+20260228-12:57:04: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:57:04: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-12:57:04: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-12:57:04: MINA session created: local=/127.0.0.1:56884, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-12:57:05: Initiated logon request
+20260228-12:57:05: Received logon
+20260228-13:01:44: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-13:01:44: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-13:01:45: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-13:01:45: MINA session created: local=/127.0.0.1:55680, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:01:46: Initiated logon request
+20260228-13:01:46: quickfix.SessionException MsgSeqNum too low, expecting 4 but received 1
+20260228-13:01:46: Disconnecting: Verifying message failed: quickfix.SessionException: MsgSeqNum too low, expecting 4 but received 1
+20260228-13:01:46: quickfix.SessionException Logon state is not valid for message (MsgType=2)
+20260228-13:01:46: Already disconnected: Verifying message failed: quickfix.SessionException: Logon state is not valid for message (MsgType=2)
+20260228-13:02:12: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-13:02:12: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-13:02:12: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-13:02:12: MINA session created: local=/127.0.0.1:58644, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:02:13: Initiated logon request
+20260228-13:02:13: Received logon
+20260228-13:02:13: Received ResendRequest FROM: 1 TO: infinity
+20260228-13:02:13: Sent SequenceReset TO: 2
+20260228-13:02:13: Resending message: 2
+20260228-13:02:13: Sent SequenceReset TO: 8
+20260228-13:02:13: Resending message: 8
+20260228-13:02:15: MINA session created: local=/127.0.0.1:58645, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:02:16: Initiated logon request
+20260228-13:02:16: Disconnecting: Encountered END_OF_STREAM
+20260228-13:02:44: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-13:02:44: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-13:02:44: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-13:02:44: MINA session created: local=/127.0.0.1:58646, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:02:45: MINA session created: local=/127.0.0.1:58647, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:02:45: Initiated logon request
+20260228-13:02:45: Disconnecting: Encountered END_OF_STREAM
+20260228-13:02:46: Initiated logon request
+20260228-13:02:46: Disconnecting: Encountered END_OF_STREAM
+20260228-13:03:14: MINA session created: local=/127.0.0.1:55961, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:03:15: MINA session created: local=/127.0.0.1:55962, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:03:15: Initiated logon request
+20260228-13:03:15: Disconnecting: Encountered END_OF_STREAM
+20260228-13:03:16: Initiated logon request
+20260228-13:03:16: Disconnecting: Encountered END_OF_STREAM
+20260228-13:03:44: MINA session created: local=/127.0.0.1:55965, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:03:45: MINA session created: local=/127.0.0.1:55966, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:03:45: Initiated logon request
+20260228-13:03:45: Disconnecting: Encountered END_OF_STREAM
+20260228-13:03:46: Initiated logon request
+20260228-13:03:46: Disconnecting: Encountered END_OF_STREAM
+20260228-13:04:14: MINA session created: local=/127.0.0.1:59157, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:04:15: MINA session created: local=/127.0.0.1:59158, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:04:15: Initiated logon request
+20260228-13:04:15: Disconnecting: Encountered END_OF_STREAM
+20260228-13:04:16: Initiated logon request
+20260228-13:04:16: Disconnecting: Encountered END_OF_STREAM
+20260228-13:04:45: MINA session created: local=/127.0.0.1:52620, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:04:45: MINA session created: local=/127.0.0.1:52621, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:04:45: Initiated logon request
+20260228-13:04:45: Disconnecting: Encountered END_OF_STREAM
+20260228-13:04:46: Initiated logon request
+20260228-13:04:46: Disconnecting: Encountered END_OF_STREAM
+20260228-13:05:15: MINA session created: local=/127.0.0.1:65068, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:05:15: MINA session created: local=/127.0.0.1:65069, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-13:05:15: Initiated logon request
+20260228-13:05:15: Disconnecting: Encountered END_OF_STREAM
+20260228-13:05:16: Initiated logon request
+20260228-13:05:16: Disconnecting: Encountered END_OF_STREAM
+20260228-13:05:34: Disconnecting: Socket exception (/127.0.0.1:9878): java.net.SocketException: Connection reset

@@ -74,3 +74,215 @@ java.net.SocketException: Connection reset
 2026-02-28 16:21:48 [main] INFO  quickfix.SocketInitiator - SessionTimer started
 2026-02-28 16:21:48 [NioProcessor-4] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:52999
 2026-02-28 16:21:48 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:13:27 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:13:27 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:13:27 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:13:27 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:13:27 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:13:27 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:13:27 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:13:31 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:13:31 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:13:31 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:13:31 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:13:32 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 18:13:32 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:13:32 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:50196
+2026-02-28 18:14:02 [NioProcessor-3] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:63582
+2026-02-28 18:14:32 [NioProcessor-4] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:63587
+2026-02-28 18:15:43 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:15:43 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:15:43 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:15:43 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:15:43 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:15:43 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:15:43 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:15:49 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:15:49 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:15:49 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:15:49 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:15:49 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:15:49 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
+java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.registerHandles(AbstractPollingIoAcceptor.java:591)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:460)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:567)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
+	... 7 common frames omitted
+2026-02-28 18:17:57 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:17:57 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:17:57 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:17:57 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:17:57 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:17:57 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:17:57 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:18:00 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:18:00 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:18:00 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:18:00 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:18:01 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 18:18:01 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:18:01 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:54747
+2026-02-28 18:21:34 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:21:34 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:21:34 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:21:34 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:21:34 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:21:34 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
+java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.registerHandles(AbstractPollingIoAcceptor.java:591)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:460)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:567)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
+	... 7 common frames omitted
+2026-02-28 18:23:17 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:23:17 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:23:17 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:23:17 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:23:17 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:23:17 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
+java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.registerHandles(AbstractPollingIoAcceptor.java:591)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:460)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:567)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
+	... 7 common frames omitted
+2026-02-28 18:23:48 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:23:48 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:23:48 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:23:48 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:23:48 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:23:48 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
+java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.registerHandles(AbstractPollingIoAcceptor.java:591)
+	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:460)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:567)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
+	... 7 common frames omitted
+2026-02-28 18:24:23 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:24:23 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:24:24 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:24:24 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:24:24 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:24:24 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:24:24 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:24:30 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:24:30 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:24:30 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:24:30 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:24:31 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 18:24:31 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:24:31 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:51305
+2026-02-28 18:24:58 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:24:58 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:24:58 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:24:58 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:24:58 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:24:58 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:24:58 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:25:01 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:57104
+2026-02-28 18:27:00 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:27:01 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:27:01 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:27:01 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:27:01 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:27:01 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:27:01 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:27:04 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:27:04 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:27:04 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:27:04 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:27:04 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 18:27:04 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:27:04 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56884
+2026-02-28 18:31:41 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:31:41 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:31:41 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:31:41 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:31:41 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:31:41 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:31:41 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:31:44 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:31:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:31:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:31:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:31:45 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 18:31:45 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:31:45 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55680
+2026-02-28 18:32:10 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:32:10 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 18:32:10 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:32:10 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:32:10 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:32:10 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 18:32:10 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 18:32:12 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:32:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:32:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:32:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:32:12 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 18:32:12 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:32:12 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58644
+2026-02-28 18:32:15 [NioProcessor-3] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58645
+2026-02-28 18:32:44 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 18:32:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 18:32:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 18:32:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 18:32:44 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 18:32:44 [NioProcessor-4] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58646
+2026-02-28 18:32:44 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 18:32:45 [NioProcessor-5] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58647
+2026-02-28 18:33:14 [NioProcessor-6] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55961
+2026-02-28 18:33:15 [NioProcessor-7] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55962
+2026-02-28 18:33:44 [NioProcessor-8] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55965
+2026-02-28 18:33:45 [NioProcessor-9] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55966
+2026-02-28 18:34:14 [NioProcessor-10] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:59157
+2026-02-28 18:34:15 [NioProcessor-11] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:59158
+2026-02-28 18:34:45 [NioProcessor-12] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:52620
+2026-02-28 18:34:45 [NioProcessor-13] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:52621
+2026-02-28 18:35:15 [NioProcessor-1] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:65068
+2026-02-28 18:35:15 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:65069

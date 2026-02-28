@@ -18,3 +18,105 @@
 20260228-10:51:49: Acceptor heartbeat set to 30 seconds
 20260228-10:51:49: Received logon
 20260228-10:51:49: Responding to Logon request
+20260228-12:20:05: Disconnecting: Socket exception (/127.0.0.1:52999): java.net.SocketException: Connection reset
+20260228-12:43:27: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:43:27: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:43:33: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:50196
+20260228-12:43:33: Acceptor heartbeat set to 30 seconds
+20260228-12:43:33: Received logon
+20260228-12:43:33: Responding to Logon request
+20260228-12:43:33: Received logout request: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:43:33: Sent logout response
+20260228-12:43:33: Disconnecting: Received logout request: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:03: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:63582
+20260228-12:44:03: Acceptor heartbeat set to 30 seconds
+20260228-12:44:03: Received logon
+20260228-12:44:03: Responding to Logon request
+20260228-12:44:03: Received logout request: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:03: Sent logout response
+20260228-12:44:03: Disconnecting: Received logout request: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:33: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:63587
+20260228-12:44:33: Acceptor heartbeat set to 30 seconds
+20260228-12:44:33: Received logon
+20260228-12:44:33: Responding to Logon request
+20260228-12:44:33: Received logout request: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:44:33: Sent logout response
+20260228-12:44:33: Disconnecting: Received logout request: MsgSeqNum too low, expecting 178 but received 1
+20260228-12:45:43: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:45:43: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:45:49: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:45:49: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:47:57: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:47:57: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:48:02: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:54747
+20260228-12:48:02: Acceptor heartbeat set to 30 seconds
+20260228-12:48:02: Received logon
+20260228-12:48:02: Responding to Logon request
+20260228-12:48:02: Rejecting invalid message: quickfix.FieldException: Required tag missing, field=21: 8=FIX.4.29=11735=D34=249=CLIENT152=20260228-12:48:02.29756=FIXHUB11=ORDER-138=10040=154=155=AAPL60=20260228-12:48:02.29510=214
+20260228-12:48:02: Reject sent for message 2: Required tag missing, field=21
+20260228-12:51:27: Disconnecting: Socket exception (/127.0.0.1:54747): java.net.SocketException: Connection reset
+20260228-12:51:34: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:51:34: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:53:17: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:53:17: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:53:48: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:53:48: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:54:23: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:54:23: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:54:32: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:51305
+20260228-12:54:32: Acceptor heartbeat set to 30 seconds
+20260228-12:54:32: Received logon
+20260228-12:54:32: Responding to Logon request
+20260228-12:54:32: Received logout request: MsgSeqNum too low, expecting 9 but received 1
+20260228-12:54:32: Sent logout response
+20260228-12:54:32: Disconnecting: Received logout request: MsgSeqNum too low, expecting 9 but received 1
+20260228-12:54:58: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:54:58: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:57:01: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-12:57:01: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-12:57:05: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:56884
+20260228-12:57:05: Acceptor heartbeat set to 30 seconds
+20260228-12:57:05: Received logon
+20260228-12:57:05: Responding to Logon request
+20260228-12:58:33: Disconnecting: Socket exception (/127.0.0.1:56884): java.net.SocketException: Connection reset
+20260228-13:01:41: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-13:01:41: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-13:01:46: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:55680
+20260228-13:01:46: Acceptor heartbeat set to 30 seconds
+20260228-13:01:46: Received logon
+20260228-13:01:46: Responding to Logon request
+20260228-13:01:46: MsgSeqNum too high, expecting 1 but received 5: 8=FIX.4.29=6835=A34=549=CLIENT152=20260228-13:01:46.13056=FIXHUB98=0108=3010=181
+20260228-13:01:46: Enqueued at pos 5: 8=FIX.4.29=6835=A34=549=CLIENT152=20260228-13:01:46.13056=FIXHUB98=0108=3010=181
+20260228-13:01:46: Sent ResendRequest FROM: 1 TO: infinity
+20260228-13:01:46: Received logout request: MsgSeqNum too low, expecting 4 but received 1
+20260228-13:01:46: Sent logout response
+20260228-13:01:46: Disconnecting: Received logout request: MsgSeqNum too low, expecting 4 but received 1
+20260228-13:02:10: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-13:02:10: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-13:02:13: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:58644
+20260228-13:02:13: Acceptor heartbeat set to 30 seconds
+20260228-13:02:13: Received logon
+20260228-13:02:13: Responding to Logon request
+20260228-13:02:13: MsgSeqNum too high, expecting 1 but received 7: 8=FIX.4.29=6835=A34=749=CLIENT152=20260228-13:02:13.86856=FIXHUB98=0108=3010=196
+20260228-13:02:13: Enqueued at pos 7: 8=FIX.4.29=6835=A34=749=CLIENT152=20260228-13:02:13.86856=FIXHUB98=0108=3010=196
+20260228-13:02:13: Sent ResendRequest FROM: 1 TO: infinity
+20260228-13:02:13: MsgSeqNum too high, expecting 1 but received 8: 8=FIX.4.29=12235=D34=849=CLIENT152=20260228-13:02:13.96356=FIXHUB11=ORDER-121=138=10040=154=155=AAPL60=20260228-13:02:13.96210=157
+20260228-13:02:13: Enqueued at pos 8: 8=FIX.4.29=12235=D34=849=CLIENT152=20260228-13:02:13.96356=FIXHUB11=ORDER-121=138=10040=154=155=AAPL60=20260228-13:02:13.96210=157
+20260228-13:02:13: Already sent ResendRequest FROM: 1 TO: 6.  Not sending another.
+20260228-13:02:13: Received SequenceReset FROM: 1 TO: 2
+20260228-13:02:13: Received SequenceReset FROM: 3 TO: 8
+20260228-13:02:13: Processing queued message: 8
+20260228-13:02:13: ResendRequest for messages FROM 1 TO 6 has been satisfied.
+20260228-13:02:16: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:58645 since session is already established from /127.0.0.1:58644
+20260228-13:02:45: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:58646 since session is already established from /127.0.0.1:58644
+20260228-13:02:46: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:58647 since session is already established from /127.0.0.1:58644
+20260228-13:03:15: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:55961 since session is already established from /127.0.0.1:58644
+20260228-13:03:16: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:55962 since session is already established from /127.0.0.1:58644
+20260228-13:03:45: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:55965 since session is already established from /127.0.0.1:58644
+20260228-13:03:46: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:55966 since session is already established from /127.0.0.1:58644
+20260228-13:04:15: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:59157 since session is already established from /127.0.0.1:58644
+20260228-13:04:16: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:59158 since session is already established from /127.0.0.1:58644
+20260228-13:04:45: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:52620 since session is already established from /127.0.0.1:58644
+20260228-13:04:46: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:52621 since session is already established from /127.0.0.1:58644
+20260228-13:05:15: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:65068 since session is already established from /127.0.0.1:58644
+20260228-13:05:16: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:65069 since session is already established from /127.0.0.1:58644

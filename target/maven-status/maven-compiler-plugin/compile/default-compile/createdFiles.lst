@@ -1,4 +1,8 @@
+com\yash\fixhub\core\OrdType.class
+com\yash\fixhub\grammar\FixMessageConverter.class
+com\yash\fixhub\core\Side.class
 com\yash\fixhub\client\FixClient.class
+com\yash\fixhub\core\InternalOrder.class
 com\yash\fixhub\core\FixHubApplication.class
 com\yash\fixhub\client\FixClientApplication.class
 com\yash\fixhub\core\FixHubServer.class
