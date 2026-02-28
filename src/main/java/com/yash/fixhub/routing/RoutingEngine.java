@@ -20,18 +20,34 @@ public class RoutingEngine {
 
     public void route(Message message, SessionID sourceSession) throws Exception {
 
-        String targetBroker = "BROKER1"; // temporary hardcoded
+        // Identify who sent the message
+        String sourceCompID = sourceSession.getTargetCompID();
 
-        if (!sessionRegistry.isConnected(targetBroker)) {
-            log.error("Target broker {} not connected!", targetBroker);
+        String targetCompID = null;
+
+        // Routing logic
+        if (sourceCompID.startsWith("CLIENT")) {
+            targetCompID = "BROKER1";
+        } else if (sourceCompID.startsWith("BROKER")) {
+            log.info("Message originated from broker. Ignoring for now.");
             return;
         }
 
-        SessionID targetSession = sessionRegistry.getSession(targetBroker);
+        if (targetCompID == null) {
+            log.warn("No routing rule found for source {}", sourceCompID);
+            return;
+        }
 
-        log.info("Routing order from {} to {}",
-                sourceSession,
-                targetBroker);
+        if (!sessionRegistry.isConnected(targetCompID)) {
+            log.error("Target {} not connected!", targetCompID);
+            return;
+        }
+
+        SessionID targetSession = sessionRegistry.getSession(targetCompID);
+
+        log.info("Routing message from {} to {}",
+                sourceCompID,
+                targetCompID);
 
         Session.sendToTarget(message, targetSession);
     }
