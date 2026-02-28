@@ -14,6 +14,7 @@ import com.yash.fixhub.core.*;
 
 	        manager.startServer();
 	        manager.startClient();
+	        manager.startBroker();
 
 	        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 	            try {

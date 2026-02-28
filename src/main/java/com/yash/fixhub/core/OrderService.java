@@ -1,24 +1,19 @@
 package com.yash.fixhub.core;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import com.yash.fixhub.routing.RoutingEngine;
+import com.yash.fixhub.session.SessionRegistry;
 import quickfix.Message;
 import quickfix.SessionID;
 
-
-import com.yash.fixhub.routing.RoutingEngine;
-
 public class OrderService {
-	private static final Logger log =
-	        LoggerFactory.getLogger(FixHubApplication.class);
+
     private final RoutingEngine routingEngine;
 
-    public OrderService() {
-        this.routingEngine = new RoutingEngine();
+    public OrderService(SessionRegistry sessionRegistry) {
+        this.routingEngine = new RoutingEngine(sessionRegistry);
     }
 
     public void handleNewOrder(Message message, SessionID sessionID) throws Exception {
-
-    	log.info("Processing NewOrderSingle...");
 
         routingEngine.route(message, sessionID);
     }

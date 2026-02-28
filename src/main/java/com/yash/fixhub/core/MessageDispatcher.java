@@ -1,16 +1,15 @@
 package com.yash.fixhub.core;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import com.yash.fixhub.session.SessionRegistry;
 import quickfix.Message;
 import quickfix.SessionID;
 
 public class MessageDispatcher {
-	private static final Logger log =
-	        LoggerFactory.getLogger(MessageDispatcher.class);
+
     private final OrderService orderService;
 
-    public MessageDispatcher() {
-        this.orderService = new OrderService();
+    public MessageDispatcher(SessionRegistry sessionRegistry) {
+        this.orderService = new OrderService(sessionRegistry);
     }
 
     public void dispatch(Message message, SessionID sessionID) throws Exception {
@@ -23,7 +22,7 @@ public class MessageDispatcher {
                 break;
 
             default:
-                log.info("Unsupported message type: " + msgType);
+                break;
         }
     }
 }

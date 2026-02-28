@@ -1,5 +1,6 @@
 package com.yash.fixhub.core;
-
+import com.yash.fixhub.client.FixClientApplication;
+import com.yash.fixhub.session.SessionRegistry;
 import quickfix.Application;
 import quickfix.DefaultMessageFactory;
 import quickfix.FileLogFactory;
@@ -17,11 +18,12 @@ public class FixEngineManager {
 	        LoggerFactory.getLogger(FixEngineManager.class);
     private SocketAcceptor acceptor;
     private SocketInitiator initiator;
-
+    private SocketInitiator brokerInitiator;
+    private final SessionRegistry sessionRegistry = new SessionRegistry();
     public void startServer() throws Exception {
 
         SessionSettings settings = new SessionSettings("fixhub.cfg");
-        Application application = new FixHubApplication();
+        Application application = new FixHubApplication(sessionRegistry);
 
         MessageStoreFactory storeFactory = new FileStoreFactory(settings);
         FileLogFactory logFactory = new FileLogFactory(settings);
@@ -59,7 +61,25 @@ public class FixEngineManager {
         initiator.start();
         log.info("FIX Client started...");
     }
+    
+    public void startBroker() throws Exception {
 
+        SessionSettings settings = new SessionSettings("fixbroker.cfg");
+
+        Application application = new FixClientApplication(); // temporary reuse
+
+        brokerInitiator = new SocketInitiator(
+                application,
+                new FileStoreFactory(settings),
+                settings,
+                new FileLogFactory(settings),
+                new DefaultMessageFactory()
+        );
+
+        brokerInitiator.start();
+        log.info("BROKER1 session started...");
+    }
+    
     public void stopAll() throws Exception {
 
         if (initiator != null) {

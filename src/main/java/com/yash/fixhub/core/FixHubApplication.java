@@ -1,74 +1,76 @@
 package com.yash.fixhub.core;
+
 import com.yash.fixhub.grammar.FixMessageConverter;
-import com.yash.fixhub.core.InternalOrder;
-import quickfix.field.MsgType;
-import quickfix.*;
+import com.yash.fixhub.session.SessionRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import quickfix.*;
+import quickfix.field.MsgType;
 
 public class FixHubApplication implements Application {
-	private static final Logger log =
-	        LoggerFactory.getLogger(FixHubApplication.class);
+
+    private static final Logger log =
+            LoggerFactory.getLogger(FixHubApplication.class);
+
+    private final SessionRegistry sessionRegistry;
+    private final MessageDispatcher dispatcher;
+
+    public FixHubApplication(SessionRegistry sessionRegistry) {
+        this.sessionRegistry = sessionRegistry;
+        this.dispatcher = new MessageDispatcher(sessionRegistry);
+    }
+
     @Override
     public void onCreate(SessionID sessionId) {
-        log.info("Session created: " + sessionId);
+        log.info("Session created: {}", sessionId);
     }
 
     @Override
     public void onLogon(SessionID sessionId) {
-    	log.info("Logon: " + sessionId);
+        sessionRegistry.register(sessionId);
+        log.info("Logon: {}", sessionId);
     }
 
     @Override
     public void onLogout(SessionID sessionId) {
-    	log.info("Logout: " + sessionId);
+        sessionRegistry.deregister(sessionId);
+        log.info("Logout: {}", sessionId);
     }
 
     @Override
     public void toAdmin(Message message, SessionID sessionId) {
-    	log.info("ToAdmin: " + FixLogUtil.pretty(message));
+        log.debug("ToAdmin: {}", FixLogUtil.pretty(message));
     }
 
     @Override
     public void fromAdmin(Message message, SessionID sessionId)
-            throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon {
+            throws FieldNotFound {
 
-    	log.info("SERVER FromAdmin: " + FixLogUtil.pretty(message));
+        log.debug("FromAdmin: {}", FixLogUtil.pretty(message));
 
-        if (message.getHeader().getString(35).equals("A")) {
-        	log.info("SERVER received Logon request");
+        if (MsgType.LOGON.equals(message.getHeader().getString(MsgType.FIELD))) {
+            log.info("Received Logon request from {}", sessionId);
         }
     }
 
     @Override
     public void toApp(Message message, SessionID sessionId)
             throws DoNotSend {
-    	log.info("ToApp: " + FixLogUtil.pretty(message));
+        log.debug("ToApp: {}", FixLogUtil.pretty(message));
     }
 
     @Override
     public void fromApp(Message message, SessionID sessionID)
             throws FieldNotFound, UnsupportedMessageType, IncorrectTagValue {
 
-        String msgType = message.getHeader().getString(quickfix.field.MsgType.FIELD);
+        log.info("Incoming App Message from {}: {}",
+                sessionID,
+                FixLogUtil.pretty(message));
 
-        // Detect NewOrderSingle
-        if (quickfix.field.MsgType.ORDER_SINGLE.equals(msgType)) {
-
-        	log.info("Received NewOrderSingle from session: " + sessionID);
-
-            FixMessageConverter converter = new FixMessageConverter();
-
-            try {
-                InternalOrder internalOrder = converter.convertToInternalOrder(message);
-
-                log.info("Converted Internal Order: " + internalOrder);
-
-                // TODO: Pass to routing layer (next step)
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            dispatcher.dispatch(message, sessionID);
+        } catch (Exception e) {
+            log.error("Error processing message from session {}", sessionID, e);
         }
     }
 }
