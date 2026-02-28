@@ -1,0 +1,13 @@
+# Maven
+target/
+
+# Logs
+logs/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS
+Thumbs.db
