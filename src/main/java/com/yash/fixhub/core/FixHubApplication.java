@@ -3,44 +3,47 @@ import com.yash.fixhub.grammar.FixMessageConverter;
 import com.yash.fixhub.core.InternalOrder;
 import quickfix.field.MsgType;
 import quickfix.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class FixHubApplication implements Application {
-
+	private static final Logger log =
+	        LoggerFactory.getLogger(FixHubApplication.class);
     @Override
     public void onCreate(SessionID sessionId) {
-        System.out.println("Session created: " + sessionId);
+        log.info("Session created: " + sessionId);
     }
 
     @Override
     public void onLogon(SessionID sessionId) {
-        System.out.println("Logon: " + sessionId);
+    	log.info("Logon: " + sessionId);
     }
 
     @Override
     public void onLogout(SessionID sessionId) {
-        System.out.println("Logout: " + sessionId);
+    	log.info("Logout: " + sessionId);
     }
 
     @Override
     public void toAdmin(Message message, SessionID sessionId) {
-        System.out.println("ToAdmin: " + message);
+    	log.info("ToAdmin: " + FixLogUtil.pretty(message));
     }
 
     @Override
     public void fromAdmin(Message message, SessionID sessionId)
             throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon {
 
-        System.out.println("SERVER FromAdmin: " + message);
+    	log.info("SERVER FromAdmin: " + FixLogUtil.pretty(message));
 
         if (message.getHeader().getString(35).equals("A")) {
-            System.out.println("SERVER received Logon request");
+        	log.info("SERVER received Logon request");
         }
     }
 
     @Override
     public void toApp(Message message, SessionID sessionId)
             throws DoNotSend {
-        System.out.println("ToApp: " + message);
+    	log.info("ToApp: " + FixLogUtil.pretty(message));
     }
 
     @Override
@@ -52,14 +55,14 @@ public class FixHubApplication implements Application {
         // Detect NewOrderSingle
         if (quickfix.field.MsgType.ORDER_SINGLE.equals(msgType)) {
 
-            System.out.println("Received NewOrderSingle from session: " + sessionID);
+        	log.info("Received NewOrderSingle from session: " + sessionID);
 
             FixMessageConverter converter = new FixMessageConverter();
 
             try {
                 InternalOrder internalOrder = converter.convertToInternalOrder(message);
 
-                System.out.println("Converted Internal Order: " + internalOrder);
+                log.info("Converted Internal Order: " + internalOrder);
 
                 // TODO: Pass to routing layer (next step)
 

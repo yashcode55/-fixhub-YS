@@ -120,3 +120,67 @@
 20260228-13:04:46: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:52621 since session is already established from /127.0.0.1:58644
 20260228-13:05:15: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:65068 since session is already established from /127.0.0.1:58644
 20260228-13:05:16: Multiple logons/connections for this session are not allowed. Closing connection from /127.0.0.1:65069 since session is already established from /127.0.0.1:58644
+20260228-17:56:09: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-17:56:09: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-17:56:10: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:56533
+20260228-17:56:10: Acceptor heartbeat set to 30 seconds
+20260228-17:56:10: quickfix.SessionException MsgSeqNum too low, expecting 15 but received 14
+20260228-17:56:10: Disconnecting: Verifying message failed: quickfix.SessionException: MsgSeqNum too low, expecting 15 but received 14
+20260228-17:59:42: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-17:59:42: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-17:59:44: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:57663
+20260228-17:59:44: Acceptor heartbeat set to 30 seconds
+20260228-17:59:44: Received logon
+20260228-17:59:44: Responding to Logon request
+20260228-18:09:29: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:09:29: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:10:52: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:10:52: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:10:53: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:60899
+20260228-18:10:53: Acceptor heartbeat set to 30 seconds
+20260228-18:10:53: Received logon
+20260228-18:10:53: Responding to Logon request
+20260228-18:13:51: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:13:51: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:13:52: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:51531
+20260228-18:13:52: Acceptor heartbeat set to 30 seconds
+20260228-18:13:52: Received logon
+20260228-18:13:52: Responding to Logon request
+20260228-18:32:11: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:32:11: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:32:12: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:49696
+20260228-18:32:12: Acceptor heartbeat set to 30 seconds
+20260228-18:32:12: Received logon
+20260228-18:32:12: Responding to Logon request
+20260228-18:32:25: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:32:25: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:32:26: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:49697
+20260228-18:32:26: Acceptor heartbeat set to 30 seconds
+20260228-18:32:26: Received logon
+20260228-18:32:26: Responding to Logon request
+20260228-18:34:43: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:34:43: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:35:06: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:35:06: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:35:08: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:63866
+20260228-18:35:08: Acceptor heartbeat set to 30 seconds
+20260228-18:35:08: Received logon
+20260228-18:35:08: Responding to Logon request
+20260228-18:35:33: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:35:33: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:35:34: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:60968
+20260228-18:35:34: Acceptor heartbeat set to 30 seconds
+20260228-18:35:34: Received logon
+20260228-18:35:34: Responding to Logon request
+20260228-18:36:59: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:36:59: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:37:01: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:60972
+20260228-18:37:01: Acceptor heartbeat set to 30 seconds
+20260228-18:37:01: Received logon
+20260228-18:37:01: Responding to Logon request
+20260228-18:37:43: Session FIX.4.2:FIXHUB->CLIENT1 schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:37:43: Created session: FIX.4.2:FIXHUB->CLIENT1
+20260228-18:37:44: Accepting session FIX.4.2:FIXHUB->CLIENT1 from /127.0.0.1:56127
+20260228-18:37:44: Acceptor heartbeat set to 30 seconds
+20260228-18:37:44: Received logon
+20260228-18:37:44: Responding to Logon request

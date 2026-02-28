@@ -1,108 +1,84 @@
-2026-02-28 16:11:35 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 16:11:35 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 16:11:35 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 16:11:35 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 16:11:35 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 16:11:35 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 16:11:35 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
-2026-02-28 16:11:35 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
-2026-02-28 16:11:35 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
-2026-02-28 16:11:47 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 16:11:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 16:11:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 16:11:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 16:11:47 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 16:11:47 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 16:11:47 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
-2026-02-28 16:11:47 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
-2026-02-28 16:11:47 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
-2026-02-28 16:11:53 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 16:11:53 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 16:11:53 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 16:11:53 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 16:11:54 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 16:11:54 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 16:11:54 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
-2026-02-28 16:11:54 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
-2026-02-28 16:11:54 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
-2026-02-28 16:12:12 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 16:12:12 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 16:12:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 16:12:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 16:12:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 16:12:12 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 16:12:12 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 16:15:06 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 16:15:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 16:15:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 16:15:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 16:15:06 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 16:15:06 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 16:15:06 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
-2026-02-28 16:15:06 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
-2026-02-28 16:15:06 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:54442
-2026-02-28 16:15:06 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
-2026-02-28 16:15:06 [NioProcessor-2] ERROR quickfix.mina.acceptor.AcceptorIoHandler - Socket (/127.0.0.1:54442): java.net.SocketException: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:378)
-	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:47)
-	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:519)
-	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$1200(AbstractPollingIoProcessor.java:68)
-	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.process(AbstractPollingIoProcessor.java:1224)
-	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.process(AbstractPollingIoProcessor.java:1213)
-	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:683)
-	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-02-28 16:20:05 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 16:20:05 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 16:20:05 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 16:20:05 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 16:20:05 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 16:20:05 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 16:20:05 [NioProcessor-3] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:63234
-2026-02-28 16:20:05 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
-2026-02-28 16:20:05 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
-2026-02-28 16:20:05 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
-2026-02-28 16:21:47 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 16:21:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 16:21:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 16:21:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 16:21:48 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 16:21:48 [NioProcessor-4] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:52999
-2026-02-28 16:21:48 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:13:27 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:13:27 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:13:27 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:13:27 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:13:27 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:13:27 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:13:27 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:13:31 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:13:31 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:13:31 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:13:31 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:13:32 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 18:13:32 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:13:32 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:50196
-2026-02-28 18:14:02 [NioProcessor-3] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:63582
-2026-02-28 18:14:32 [NioProcessor-4] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:63587
-2026-02-28 18:15:43 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:15:43 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:15:43 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:15:43 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:15:43 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:15:43 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:15:43 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:15:49 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:15:49 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:15:49 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:15:49 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:15:49 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:15:49 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
+2026-03-01 00:02:11 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:02:11 [main] INFO  com.yash.fixhub.core.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:02:11 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-03-01 00:02:11 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:02:11 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:02:11 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:02:11 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-03-01 00:02:11 [main] INFO  com.yash.fixhub.core.FixEngineManager - FIX Server started...
+2026-03-01 00:02:11 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-01 00:02:11 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:02:11 [main] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] Session created: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:02:11 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:02:11 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:02:11 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:02:11 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-03-01 00:02:11 [main] INFO  com.yash.fixhub.core.FixEngineManager - FIX Client started...
+2026-03-01 00:02:11 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-01 00:02:11 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:49696
+2026-03-01 00:02:12 [QFJ Timer] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=6935=A34=3249=CLIENT152=20260228-18:32:12.54856=FIXHUB98=0108=3010=245
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=69|35=A|34=32|49=CLIENT1|52=20260228-18:32:12.548|56=FIXHUB|98=0|108=30|10=245|
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER received Logon request
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=69|35=A|34=29|49=FIXHUB|52=20260228-18:32:12.580|56=CLIENT1|98=0|108=30|10=247|
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Logon: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=6935=A34=2949=FIXHUB52=20260228-18:32:12.58056=CLIENT198=0108=3010=247
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - Client Logged On: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToApp: 8=FIX.4.29=12335=D34=3349=CLIENT152=20260228-18:32:12.60456=FIXHUB11=ORDER-121=138=10040=154=155=AAPL60=20260228-18:32:12.60110=200
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - Sent NewOrderSingle from Client
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Received NewOrderSingle from session: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:02:12 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Converted Internal Order: InternalOrder{clOrdId='ORDER-1', symbol='AAPL', side=BUY, quantity=100.0, ordType=MARKET, transactTime=2026-02-28T18:32:12.601}
+2026-03-01 00:02:25 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:02:25 [main] INFO  com.yash.fixhub.core.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:02:25 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-03-01 00:02:25 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:02:25 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:02:25 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:02:25 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-03-01 00:02:25 [main] INFO  com.yash.fixhub.core.FixEngineManager - FIX Server started...
+2026-03-01 00:02:25 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-01 00:02:25 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:02:25 [main] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] Session created: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:02:25 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:02:25 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:02:25 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:02:25 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-03-01 00:02:25 [main] INFO  com.yash.fixhub.core.FixEngineManager - FIX Client started...
+2026-03-01 00:02:25 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-01 00:02:25 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:49697
+2026-03-01 00:02:26 [QFJ Timer] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=6935=A34=3449=CLIENT152=20260228-18:32:26.38456=FIXHUB98=0108=3010=250
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=69|35=A|34=34|49=CLIENT1|52=20260228-18:32:26.384|56=FIXHUB|98=0|108=30|10=250|
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER received Logon request
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=69|35=A|34=30|49=FIXHUB|52=20260228-18:32:26.414|56=CLIENT1|98=0|108=30|10=240|
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Logon: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=6935=A34=3049=FIXHUB52=20260228-18:32:26.41456=CLIENT198=0108=3010=240
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - Client Logged On: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToApp: 8=FIX.4.29=12335=D34=3549=CLIENT152=20260228-18:32:26.43656=FIXHUB11=ORDER-121=138=10040=154=155=AAPL60=20260228-18:32:26.43510=220
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - Sent NewOrderSingle from Client
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Received NewOrderSingle from session: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:02:26 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Converted Internal Order: InternalOrder{clOrdId='ORDER-1', symbol='AAPL', side=BUY, quantity=100.0, ordType=MARKET, transactTime=2026-02-28T18:32:26.435}
+2026-03-01 00:02:57 [QFJ Timer] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=31|49=FIXHUB|52=20260228-18:32:57.179|56=CLIENT1|10=208|
+2026-03-01 00:02:57 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=3149=FIXHUB52=20260228-18:32:57.17956=CLIENT110=208
+2026-03-01 00:02:57 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=5735=034=3649=CLIENT152=20260228-18:32:57.18056=FIXHUB10=205
+2026-03-01 00:02:57 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=36|49=CLIENT1|52=20260228-18:32:57.180|56=FIXHUB|10=205|
+2026-03-01 00:03:27 [QFJ Timer] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=32|49=FIXHUB|52=20260228-18:33:27.177|56=CLIENT1|10=205|
+2026-03-01 00:03:27 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=3249=FIXHUB52=20260228-18:33:27.17756=CLIENT110=205
+2026-03-01 00:03:27 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=5735=034=3749=CLIENT152=20260228-18:33:27.17856=FIXHUB10=211
+2026-03-01 00:03:27 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=37|49=CLIENT1|52=20260228-18:33:27.178|56=FIXHUB|10=211|
+2026-03-01 00:03:57 [QFJ Timer] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=33|49=FIXHUB|52=20260228-18:33:57.178|56=CLIENT1|10=210|
+2026-03-01 00:03:57 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=3349=FIXHUB52=20260228-18:33:57.17856=CLIENT110=210
+2026-03-01 00:03:57 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=5735=034=3849=CLIENT152=20260228-18:33:57.18156=FIXHUB10=209
+2026-03-01 00:03:57 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=38|49=CLIENT1|52=20260228-18:33:57.181|56=FIXHUB|10=209|
+2026-03-01 00:04:27 [QFJ Timer] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=34|49=FIXHUB|52=20260228-18:34:27.177|56=CLIENT1|10=208|
+2026-03-01 00:04:27 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=3449=FIXHUB52=20260228-18:34:27.17756=CLIENT110=208
+2026-03-01 00:04:27 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=5735=034=3949=CLIENT152=20260228-18:34:27.18256=FIXHUB10=209
+2026-03-01 00:04:27 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=39|49=CLIENT1|52=20260228-18:34:27.182|56=FIXHUB|10=209|
+2026-03-01 00:04:43 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:04:43 [main] INFO  com.yash.fixhub.core.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:04:43 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-03-01 00:04:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:04:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:04:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:04:44 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
 java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
 	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
 	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
@@ -120,169 +96,151 @@ Caused by: java.net.BindException: Address already in use: bind
 	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
 	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
 	... 7 common frames omitted
-2026-02-28 18:17:57 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:17:57 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:17:57 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:17:57 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:17:57 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:17:57 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:17:57 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:18:00 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:18:00 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:18:00 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:18:00 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:18:01 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 18:18:01 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:18:01 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:54747
-2026-02-28 18:21:34 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:21:34 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:21:34 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:21:34 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:21:34 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:21:34 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
-java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
-	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.registerHandles(AbstractPollingIoAcceptor.java:591)
-	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:460)
-	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.net.BindException: Address already in use: bind
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:567)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
-	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
-	... 7 common frames omitted
-2026-02-28 18:23:17 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:23:17 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:23:17 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:23:17 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:23:17 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:23:17 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
-java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
-	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.registerHandles(AbstractPollingIoAcceptor.java:591)
-	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:460)
-	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.net.BindException: Address already in use: bind
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:567)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
-	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
-	... 7 common frames omitted
-2026-02-28 18:23:48 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:23:48 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:23:48 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:23:48 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:23:48 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:23:48 [main] ERROR quickfix.SocketAcceptor - Cannot start acceptor session for 0.0.0.0/0.0.0.0:9878, error: {}
-java.io.IOException: Error while binding on 0.0.0.0/0.0.0.0:9878
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:270)
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:52)
-	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.registerHandles(AbstractPollingIoAcceptor.java:591)
-	at org.apache.mina.core.polling.AbstractPollingIoAcceptor$Acceptor.run(AbstractPollingIoAcceptor.java:460)
-	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.net.BindException: Address already in use: bind
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:567)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
-	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
-	at org.apache.mina.transport.socket.nio.NioSocketAcceptor.open(NioSocketAcceptor.java:265)
-	... 7 common frames omitted
-2026-02-28 18:24:23 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:24:23 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:24:24 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:24:24 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:24:24 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:24:24 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:24:24 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:24:30 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:24:30 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:24:30 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:24:30 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:24:31 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 18:24:31 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:24:31 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:51305
-2026-02-28 18:24:58 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:24:58 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:24:58 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:24:58 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:24:58 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:24:58 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:24:58 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:25:01 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:57104
-2026-02-28 18:27:00 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:27:01 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:27:01 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:27:01 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:27:01 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:27:01 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:27:01 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:27:04 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:27:04 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:27:04 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:27:04 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:27:04 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 18:27:04 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:27:04 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56884
-2026-02-28 18:31:41 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:31:41 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:31:41 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:31:41 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:31:41 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:31:41 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:31:41 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:31:44 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:31:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:31:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:31:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:31:45 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 18:31:45 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:31:45 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55680
-2026-02-28 18:32:10 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:32:10 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
-2026-02-28 18:32:10 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:32:10 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:32:10 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:32:10 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
-2026-02-28 18:32:10 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
-2026-02-28 18:32:12 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:32:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:32:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:32:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:32:12 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 18:32:12 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:32:12 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58644
-2026-02-28 18:32:15 [NioProcessor-3] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58645
-2026-02-28 18:32:44 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
-2026-02-28 18:32:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
-2026-02-28 18:32:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
-2026-02-28 18:32:44 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
-2026-02-28 18:32:44 [main] INFO  quickfix.SocketInitiator - SessionTimer started
-2026-02-28 18:32:44 [NioProcessor-4] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58646
-2026-02-28 18:32:44 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
-2026-02-28 18:32:45 [NioProcessor-5] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:58647
-2026-02-28 18:33:14 [NioProcessor-6] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55961
-2026-02-28 18:33:15 [NioProcessor-7] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55962
-2026-02-28 18:33:44 [NioProcessor-8] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55965
-2026-02-28 18:33:45 [NioProcessor-9] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:55966
-2026-02-28 18:34:14 [NioProcessor-10] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:59157
-2026-02-28 18:34:15 [NioProcessor-11] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:59158
-2026-02-28 18:34:45 [NioProcessor-12] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:52620
-2026-02-28 18:34:45 [NioProcessor-13] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:52621
-2026-02-28 18:35:15 [NioProcessor-1] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:65068
-2026-02-28 18:35:15 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:65069
+2026-03-01 00:04:57 [QFJ Timer] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=35|49=FIXHUB|52=20260228-18:34:57.177|56=CLIENT1|10=212|
+2026-03-01 00:04:57 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=3549=FIXHUB52=20260228-18:34:57.17756=CLIENT110=212
+2026-03-01 00:04:57 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=5735=034=4049=CLIENT152=20260228-18:34:57.17856=FIXHUB10=209
+2026-03-01 00:04:57 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=40|49=CLIENT1|52=20260228-18:34:57.178|56=FIXHUB|10=209|
+2026-03-01 00:05:06 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:05:06 [main] INFO  com.yash.fixhub.core.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:05:06 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-03-01 00:05:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:05:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:05:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:05:06 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-03-01 00:05:06 [main] INFO  com.yash.fixhub.core.FixEngineManager - FIX Server started...
+2026-03-01 00:05:06 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-01 00:05:06 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:05:06 [main] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] Session created: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:05:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:05:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:05:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:05:06 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-03-01 00:05:06 [main] INFO  com.yash.fixhub.core.FixEngineManager - FIX Client started...
+2026-03-01 00:05:06 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-01 00:05:06 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:63866
+2026-03-01 00:05:08 [QFJ Timer] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=6935=A34=4149=CLIENT152=20260228-18:35:07.99256=FIXHUB98=0108=3010=255
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=69|35=A|34=41|49=CLIENT1|52=20260228-18:35:07.992|56=FIXHUB|98=0|108=30|10=255|
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - SERVER received Logon request
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=69|35=A|34=36|49=FIXHUB|52=20260228-18:35:08.027|56=CLIENT1|98=0|108=30|10=249|
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Logon: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=6935=A34=3649=FIXHUB52=20260228-18:35:08.02756=CLIENT198=0108=3010=249
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - Client Logged On: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - [CLIENT] ToApp: 8=FIX.4.29=12335=D34=4249=CLIENT152=20260228-18:35:08.05256=FIXHUB11=ORDER-121=138=10040=154=155=AAPL60=20260228-18:35:08.05110=212
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.client.FixClientApplication - Sent NewOrderSingle from Client
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Received NewOrderSingle from session: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:05:08 [QFJ Message Processor] INFO  com.yash.fixhub.core.FixHubApplication - Converted Internal Order: InternalOrder{clOrdId='ORDER-1', symbol='AAPL', side=BUY, quantity=100.0, ordType=MARKET, transactTime=2026-02-28T18:35:08.051}
+2026-03-01 00:05:33 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:05:33 INFO  [main] com.yash.fixhub.core.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:05:33 INFO  [main] quickfix.SocketAcceptor - SessionTimer started
+2026-03-01 00:05:33 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:05:33 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:05:33 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:05:33 INFO  [main] quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-03-01 00:05:33 INFO  [main] com.yash.fixhub.core.FixEngineManager - FIX Server started...
+2026-03-01 00:05:33 INFO  [QFJ Message Processor] quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-01 00:05:33 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:05:33 INFO  [main] com.yash.fixhub.client.FixClientApplication - [CLIENT] Session created: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:05:33 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:05:33 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:05:33 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:05:33 INFO  [main] quickfix.SocketInitiator - SessionTimer started
+2026-03-01 00:05:33 INFO  [main] com.yash.fixhub.core.FixEngineManager - FIX Client started...
+2026-03-01 00:05:33 INFO  [QFJ Message Processor] quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-01 00:05:33 INFO  [NioProcessor-2] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:60968
+2026-03-01 00:05:34 INFO  [QFJ Timer] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=6935=A34=4349=CLIENT152=20260228-18:35:34.65556=FIXHUB98=0108=3010=253
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=69|35=A|34=43|49=CLIENT1|52=20260228-18:35:34.655|56=FIXHUB|98=0|108=30|10=253|
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER received Logon request
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=69|35=A|34=37|49=FIXHUB|52=20260228-18:35:34.689|56=CLIENT1|98=0|108=30|10=007|
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Logon: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=6935=A34=3749=FIXHUB52=20260228-18:35:34.68956=CLIENT198=0108=3010=007
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Client Logged On: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToApp: 8=FIX.4.29=12335=D34=4449=CLIENT152=20260228-18:35:34.71456=FIXHUB11=ORDER-121=138=10040=154=155=AAPL60=20260228-18:35:34.71210=221
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Sent NewOrderSingle from Client
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Received NewOrderSingle from session: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:05:34 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Converted Internal Order: InternalOrder{clOrdId='ORDER-1', symbol='AAPL', side=BUY, quantity=100.0, ordType=MARKET, transactTime=2026-02-28T18:35:34.712}
+2026-03-01 00:06:05 INFO  [QFJ Timer] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=38|49=FIXHUB|52=20260228-18:36:05.451|56=CLIENT1|10=205|
+2026-03-01 00:06:05 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=3849=FIXHUB52=20260228-18:36:05.45156=CLIENT110=205
+2026-03-01 00:06:05 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=5735=034=4549=CLIENT152=20260228-18:36:05.45356=FIXHUB10=205
+2026-03-01 00:06:05 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=45|49=CLIENT1|52=20260228-18:36:05.453|56=FIXHUB|10=205|
+2026-03-01 00:06:35 INFO  [QFJ Timer] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=39|49=FIXHUB|52=20260228-18:36:35.451|56=CLIENT1|10=209|
+2026-03-01 00:06:35 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=3949=FIXHUB52=20260228-18:36:35.45156=CLIENT110=209
+2026-03-01 00:06:35 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.29=5735=034=4649=CLIENT152=20260228-18:36:35.45656=FIXHUB10=212
+2026-03-01 00:06:35 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=46|49=CLIENT1|52=20260228-18:36:35.456|56=FIXHUB|10=212|
+2026-03-01 00:06:59 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:06:59 INFO  [main] com.yash.fixhub.core.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:06:59 INFO  [main] quickfix.SocketAcceptor - SessionTimer started
+2026-03-01 00:07:00 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:07:00 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:07:00 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:07:00 INFO  [main] quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-03-01 00:07:00 INFO  [main] com.yash.fixhub.core.FixEngineManager - FIX Server started...
+2026-03-01 00:07:00 INFO  [QFJ Message Processor] quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-01 00:07:00 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:07:00 INFO  [main] com.yash.fixhub.client.FixClientApplication - [CLIENT] Session created: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:07:00 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:07:00 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:07:00 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:07:00 INFO  [main] quickfix.SocketInitiator - SessionTimer started
+2026-03-01 00:07:00 INFO  [main] com.yash.fixhub.core.FixEngineManager - FIX Client started...
+2026-03-01 00:07:00 INFO  [QFJ Message Processor] quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-01 00:07:00 INFO  [NioProcessor-2] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:60972
+2026-03-01 00:07:01 INFO  [QFJ Timer] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=69|35=A|34=47|49=CLIENT1|52=20260228-18:37:01.124|56=FIXHUB|98=0|108=30|10=244|
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=69|35=A|34=47|49=CLIENT1|52=20260228-18:37:01.124|56=FIXHUB|98=0|108=30|10=244|
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER received Logon request
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=69|35=A|34=40|49=FIXHUB|52=20260228-18:37:01.158|56=CLIENT1|98=0|108=30|10=244|
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Logon: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=6935=A34=4049=FIXHUB52=20260228-18:37:01.15856=CLIENT198=0108=3010=244
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Client Logged On: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToApp: 8=FIX.4.2|9=123|35=D|34=48|49=CLIENT1|52=20260228-18:37:01.186|56=FIXHUB|11=ORDER-1|21=1|38=100|40=1|54=1|55=AAPL|60=20260228-18:37:01.185|10=224|
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Sent NewOrderSingle from Client
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Received NewOrderSingle from session: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:07:01 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Converted Internal Order: InternalOrder{clOrdId='ORDER-1', symbol='AAPL', side=BUY, quantity=100.0, ordType=MARKET, transactTime=2026-02-28T18:37:01.185}
+2026-03-01 00:07:31 INFO  [QFJ Timer] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=41|49=FIXHUB|52=20260228-18:37:31.916|56=CLIENT1|10=205|
+2026-03-01 00:07:31 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.29=5735=034=4149=FIXHUB52=20260228-18:37:31.91656=CLIENT110=205
+2026-03-01 00:07:31 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=57|35=0|34=49|49=CLIENT1|52=20260228-18:37:31.918|56=FIXHUB|10=215|
+2026-03-01 00:07:31 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=49|49=CLIENT1|52=20260228-18:37:31.918|56=FIXHUB|10=215|
+2026-03-01 00:07:43 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:07:43 INFO  [main] com.yash.fixhub.core.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:07:43 INFO  [main] quickfix.SocketAcceptor - SessionTimer started
+2026-03-01 00:07:43 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:07:43 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:07:43 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:07:43 INFO  [main] quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-03-01 00:07:43 INFO  [main] com.yash.fixhub.core.FixEngineManager - FIX Server started...
+2026-03-01 00:07:43 INFO  [QFJ Message Processor] quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-01 00:07:43 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-01 00:07:43 INFO  [main] com.yash.fixhub.client.FixClientApplication - [CLIENT] Session created: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:07:43 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-01 00:07:43 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-01 00:07:43 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-01 00:07:43 INFO  [main] quickfix.SocketInitiator - SessionTimer started
+2026-03-01 00:07:43 INFO  [main] com.yash.fixhub.core.FixEngineManager - FIX Client started...
+2026-03-01 00:07:43 INFO  [QFJ Message Processor] quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-01 00:07:43 INFO  [NioProcessor-2] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56127
+2026-03-01 00:07:44 INFO  [QFJ Timer] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=69|35=A|34=50|49=CLIENT1|52=20260228-18:37:44.603|56=FIXHUB|98=0|108=30|10=247|
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=69|35=A|34=50|49=CLIENT1|52=20260228-18:37:44.603|56=FIXHUB|98=0|108=30|10=247|
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER received Logon request
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=69|35=A|34=42|49=FIXHUB|52=20260228-18:37:44.634|56=CLIENT1|98=0|108=30|10=252|
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Logon: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.2|9=69|35=A|34=42|49=FIXHUB|52=20260228-18:37:44.634|56=CLIENT1|98=0|108=30|10=252|
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Client Logged On: FIX.4.2:CLIENT1->FIXHUB
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToApp: 8=FIX.4.2|9=123|35=D|34=51|49=CLIENT1|52=20260228-18:37:44.662|56=FIXHUB|11=ORDER-1|21=1|38=100|40=1|54=1|55=AAPL|60=20260228-18:37:44.659|10=237|
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Sent NewOrderSingle from Client
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Received NewOrderSingle from session: FIX.4.2:FIXHUB->CLIENT1
+2026-03-01 00:07:44 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - Converted Internal Order: InternalOrder{clOrdId='ORDER-1', symbol='AAPL', side=BUY, quantity=100.0, ordType=MARKET, transactTime=2026-02-28T18:37:44.659}
+2026-03-01 00:08:15 INFO  [QFJ Timer] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=43|49=FIXHUB|52=20260228-18:38:15.406|56=CLIENT1|10=204|
+2026-03-01 00:08:15 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.2|9=57|35=0|34=43|49=FIXHUB|52=20260228-18:38:15.406|56=CLIENT1|10=204|
+2026-03-01 00:08:15 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=57|35=0|34=52|49=CLIENT1|52=20260228-18:38:15.410|56=FIXHUB|10=199|
+2026-03-01 00:08:15 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=52|49=CLIENT1|52=20260228-18:38:15.410|56=FIXHUB|10=199|
+2026-03-01 00:08:45 INFO  [QFJ Timer] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=44|49=FIXHUB|52=20260228-18:38:45.405|56=CLIENT1|10=207|
+2026-03-01 00:08:45 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.2|9=57|35=0|34=44|49=FIXHUB|52=20260228-18:38:45.405|56=CLIENT1|10=207|
+2026-03-01 00:08:45 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=57|35=0|34=53|49=CLIENT1|52=20260228-18:38:45.407|56=FIXHUB|10=209|
+2026-03-01 00:08:45 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=53|49=CLIENT1|52=20260228-18:38:45.407|56=FIXHUB|10=209|
+2026-03-01 00:09:15 INFO  [QFJ Timer] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=45|49=FIXHUB|52=20260228-18:39:15.409|56=CLIENT1|10=210|
+2026-03-01 00:09:15 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.2|9=57|35=0|34=45|49=FIXHUB|52=20260228-18:39:15.409|56=CLIENT1|10=210|
+2026-03-01 00:09:15 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=57|35=0|34=54|49=CLIENT1|52=20260228-18:39:15.413|56=FIXHUB|10=205|
+2026-03-01 00:09:15 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=54|49=CLIENT1|52=20260228-18:39:15.413|56=FIXHUB|10=205|
+2026-03-01 00:09:45 INFO  [QFJ Timer] com.yash.fixhub.core.FixHubApplication - ToAdmin: 8=FIX.4.2|9=57|35=0|34=46|49=FIXHUB|52=20260228-18:39:45.406|56=CLIENT1|10=211|
+2026-03-01 00:09:45 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.2|9=57|35=0|34=46|49=FIXHUB|52=20260228-18:39:45.406|56=CLIENT1|10=211|
+2026-03-01 00:09:45 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=57|35=0|34=55|49=CLIENT1|52=20260228-18:39:45.408|56=FIXHUB|10=213|
+2026-03-01 00:09:45 INFO  [QFJ Message Processor] com.yash.fixhub.core.FixHubApplication - SERVER FromAdmin: 8=FIX.4.2|9=57|35=0|34=55|49=CLIENT1|52=20260228-18:39:45.408|56=FIXHUB|10=213|

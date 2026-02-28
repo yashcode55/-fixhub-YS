@@ -1,9 +1,11 @@
 package com.yash.fixhub.core;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import quickfix.*;
 
 public class FixHubServer {
-
+	private static final Logger log =
+	        LoggerFactory.getLogger(FixHubServer.class);
     private static SocketAcceptor acceptor;
 
     public static void main(String[] args) throws Exception {
@@ -24,12 +26,12 @@ public class FixHubServer {
         );
 
         acceptor.start();
-        System.out.println("FIX Hub started on port 9878...");
+        log.info("FIX Hub started on port 9878...");
 
         // 🔥 Shutdown hook
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             try {
-                System.out.println("Stopping FIX Hub...");
+            	log.info("Stopping FIX Hub...");
                 if (acceptor != null) {
                     acceptor.stop();
                 }
