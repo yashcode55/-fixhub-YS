@@ -4,17 +4,18 @@ import quickfix.*;
 
 public class FixHubServer {
 
-    public static void main(String[] args) throws Exception {
+    private static SocketAcceptor acceptor;
 
-        SessionSettings settings = new SessionSettings("fixhub.cfg");
+    public static void main(String[] args) throws Exception {
 
         Application application = new FixHubApplication();
 
+        SessionSettings settings = new SessionSettings("fixhub.cfg");
         MessageStoreFactory storeFactory = new FileStoreFactory(settings);
         LogFactory logFactory = new FileLogFactory(settings);
         MessageFactory messageFactory = new DefaultMessageFactory();
 
-        SocketAcceptor acceptor = new SocketAcceptor(
+        acceptor = new SocketAcceptor(
                 application,
                 storeFactory,
                 settings,
@@ -25,10 +26,13 @@ public class FixHubServer {
         acceptor.start();
         System.out.println("FIX Hub started on port 9878...");
 
+        // 🔥 Shutdown hook
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             try {
-                acceptor.stop();
-                System.out.println("FIX Hub stopped.");
+                System.out.println("Stopping FIX Hub...");
+                if (acceptor != null) {
+                    acceptor.stop();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }

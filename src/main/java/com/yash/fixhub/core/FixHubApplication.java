@@ -1,5 +1,7 @@
 package com.yash.fixhub.core;
-
+import com.yash.fixhub.grammar.FixMessageConverter;
+import com.yash.fixhub.core.InternalOrder;
+import quickfix.field.MsgType;
 import quickfix.*;
 
 public class FixHubApplication implements Application {
@@ -42,8 +44,28 @@ public class FixHubApplication implements Application {
     }
 
     @Override
-    public void fromApp(Message message, SessionID sessionId)
-            throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType {
-        System.out.println("FromApp: " + message);
+    public void fromApp(Message message, SessionID sessionID)
+            throws FieldNotFound, UnsupportedMessageType, IncorrectTagValue {
+
+        String msgType = message.getHeader().getString(quickfix.field.MsgType.FIELD);
+
+        // Detect NewOrderSingle
+        if (quickfix.field.MsgType.ORDER_SINGLE.equals(msgType)) {
+
+            System.out.println("Received NewOrderSingle from session: " + sessionID);
+
+            FixMessageConverter converter = new FixMessageConverter();
+
+            try {
+                InternalOrder internalOrder = converter.convertToInternalOrder(message);
+
+                System.out.println("Converted Internal Order: " + internalOrder);
+
+                // TODO: Pass to routing layer (next step)
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
