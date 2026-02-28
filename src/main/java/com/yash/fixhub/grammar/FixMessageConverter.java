@@ -1,9 +1,9 @@
 package com.yash.fixhub.grammar;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.yash.fixhub.core.InternalOrder;
-import com.yash.fixhub.core.Side;
-import com.yash.fixhub.core.OrdType;
+import com.yash.fixhub.domain.InternalOrder;
+import com.yash.fixhub.domain.Side;
+import com.yash.fixhub.domain.OrdType;
 
 import quickfix.FieldNotFound;
 import quickfix.Message;
