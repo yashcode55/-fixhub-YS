@@ -206,3 +206,65 @@ java.util.concurrent.RejectedExecutionException: Task org.apache.mina.util.NameP
 20260228-13:05:16: Initiated logon request
 20260228-13:05:16: Disconnecting: Encountered END_OF_STREAM
 20260228-13:05:34: Disconnecting: Socket exception (/127.0.0.1:9878): java.net.SocketException: Connection reset
+20260228-17:56:09: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-17:56:09: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-17:56:09: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-17:56:09: MINA session created: local=/127.0.0.1:56533, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-17:56:10: Initiated logon request
+20260228-17:56:10: Received logout request: MsgSeqNum too low, expecting 15 but received 14
+20260228-17:56:10: Sent logout response
+20260228-17:56:10: Disconnecting: Received logout request: MsgSeqNum too low, expecting 15 but received 14
+20260228-17:59:43: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-17:59:43: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-17:59:43: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-17:59:43: MINA session created: local=/127.0.0.1:57663, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-17:59:44: Initiated logon request
+20260228-17:59:44: Received logon
+20260228-18:10:52: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:10:52: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:10:52: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:10:52: MINA session created: local=/127.0.0.1:60899, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:10:53: Initiated logon request
+20260228-18:10:53: Received logon
+20260228-18:13:51: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:13:51: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:13:51: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:13:51: MINA session created: local=/127.0.0.1:51531, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:13:52: Initiated logon request
+20260228-18:13:52: Received logon
+20260228-18:32:11: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:32:11: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:32:11: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:32:11: MINA session created: local=/127.0.0.1:49696, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:32:12: Initiated logon request
+20260228-18:32:12: Received logon
+20260228-18:32:25: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:32:25: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:32:25: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:32:25: MINA session created: local=/127.0.0.1:49697, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:32:26: Initiated logon request
+20260228-18:32:26: Received logon
+20260228-18:35:06: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:35:06: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:35:06: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:35:06: MINA session created: local=/127.0.0.1:63866, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:35:08: Initiated logon request
+20260228-18:35:08: Received logon
+20260228-18:35:33: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:35:33: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:35:33: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:35:33: MINA session created: local=/127.0.0.1:60968, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:35:34: Initiated logon request
+20260228-18:35:34: Received logon
+20260228-18:37:00: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:37:00: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:37:00: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:37:00: MINA session created: local=/127.0.0.1:60972, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:37:01: Initiated logon request
+20260228-18:37:01: Received logon
+20260228-18:37:43: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-18:37:43: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-18:37:43: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-18:37:43: MINA session created: local=/127.0.0.1:56127, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-18:37:44: Initiated logon request
+20260228-18:37:44: Received logon

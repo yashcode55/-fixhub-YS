@@ -1,5 +1,6 @@
 package com.yash.fixhub.grammar;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.yash.fixhub.core.InternalOrder;
 import com.yash.fixhub.core.Side;
 import com.yash.fixhub.core.OrdType;
@@ -15,7 +16,8 @@ import quickfix.field.TransactTime;
 import java.time.LocalDateTime;
 
 public class FixMessageConverter {
-
+	private static final Logger log =
+	        LoggerFactory.getLogger(FixMessageConverter.class);
     public InternalOrder convertToInternalOrder(Message message) throws FieldNotFound {
 
         String clOrdId = message.getString(ClOrdID.FIELD);

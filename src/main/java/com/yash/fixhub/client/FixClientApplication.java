@@ -2,17 +2,22 @@ package com.yash.fixhub.client;
 import quickfix.Session;
 import quickfix.SessionID;
 import quickfix.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.yash.fixhub.core.FixLogUtil;
 
 public class FixClientApplication implements Application {
-
+	private static final Logger log =
+	        LoggerFactory.getLogger(FixClientApplication.class);
     @Override
     public void onCreate(SessionID sessionId) {
-        System.out.println("[CLIENT] Session created: " + sessionId);
+        log.info("[CLIENT] Session created: " + sessionId);
     }
 
     @Override
     public void onLogon(SessionID sessionID) {
-        System.out.println("Client Logged On: " + sessionID);
+        log.info("Client Logged On: " + sessionID);
 
         try {
             sendTestOrder(sessionID);
@@ -23,30 +28,30 @@ public class FixClientApplication implements Application {
 
     @Override
     public void onLogout(SessionID sessionId) {
-        System.out.println("[CLIENT] Logout: " + sessionId);
+    	log.info("[CLIENT] Logout: " + sessionId);
     }
 
     @Override
     public void toAdmin(Message message, SessionID sessionId) {
-        System.out.println("[CLIENT] ToAdmin: " + message);
+    	log.info("[CLIENT] ToAdmin: " + FixLogUtil.pretty(message));
     }
 
     @Override
     public void fromAdmin(Message message, SessionID sessionId)
             throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, RejectLogon {
-        System.out.println("[CLIENT] FromAdmin: " + message);
+    	log.info("[CLIENT] FromAdmin: " + FixLogUtil.pretty(message));
     }
 
     @Override
     public void toApp(Message message, SessionID sessionId)
             throws DoNotSend {
-        System.out.println("[CLIENT] ToApp: " + message);
+    	log.info("[CLIENT] ToApp: " + FixLogUtil.pretty(message));
     }
 
     @Override
     public void fromApp(Message message, SessionID sessionId)
             throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue, UnsupportedMessageType {
-        System.out.println("[CLIENT] FromApp: " + message);
+    	log.info("[CLIENT] FromApp: " + FixLogUtil.pretty(message));
     }
     
     public void sendTestOrder(SessionID sessionID) throws Exception {
@@ -64,6 +69,6 @@ public class FixClientApplication implements Application {
 
         quickfix.Session.sendToTarget(order, sessionID);
 
-        System.out.println("Sent NewOrderSingle from Client");
+        log.info("Sent NewOrderSingle from Client");
     }
 }
