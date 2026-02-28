@@ -1,0 +1,76 @@
+2026-02-28 16:11:35 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 16:11:35 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 16:11:35 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 16:11:35 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 16:11:35 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 16:11:35 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 16:11:35 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
+2026-02-28 16:11:35 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
+2026-02-28 16:11:35 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
+2026-02-28 16:11:47 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 16:11:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 16:11:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 16:11:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 16:11:47 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 16:11:47 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 16:11:47 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
+2026-02-28 16:11:47 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
+2026-02-28 16:11:47 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
+2026-02-28 16:11:53 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 16:11:53 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 16:11:53 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 16:11:53 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 16:11:54 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 16:11:54 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 16:11:54 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
+2026-02-28 16:11:54 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
+2026-02-28 16:11:54 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
+2026-02-28 16:12:12 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 16:12:12 [main] INFO  quickfix.SocketAcceptor - SessionTimer started
+2026-02-28 16:12:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 16:12:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 16:12:12 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 16:12:12 [main] INFO  quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1]
+2026-02-28 16:12:12 [QFJ Message Processor] INFO  quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-02-28 16:15:06 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 16:15:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 16:15:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 16:15:06 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 16:15:06 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 16:15:06 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 16:15:06 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
+2026-02-28 16:15:06 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
+2026-02-28 16:15:06 [NioProcessor-2] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:54442
+2026-02-28 16:15:06 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
+2026-02-28 16:15:06 [NioProcessor-2] ERROR quickfix.mina.acceptor.AcceptorIoHandler - Socket (/127.0.0.1:54442): java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:378)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:47)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:519)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$1200(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.process(AbstractPollingIoProcessor.java:1224)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.process(AbstractPollingIoProcessor.java:1213)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-02-28 16:20:05 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 16:20:05 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 16:20:05 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 16:20:05 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 16:20:05 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 16:20:05 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor
+2026-02-28 16:20:05 [NioProcessor-3] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:63234
+2026-02-28 16:20:05 [Thread-0] INFO  quickfix.SocketInitiator - Logging out all sessions
+2026-02-28 16:20:05 [Thread-0] INFO  quickfix.SocketInitiator - SessionTimer canceled
+2026-02-28 16:20:05 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Stopped QFJ Message Processor
+2026-02-28 16:21:47 [main] INFO  quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-02-28 16:21:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-02-28 16:21:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-02-28 16:21:47 [main] INFO  quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-02-28 16:21:48 [main] INFO  quickfix.SocketInitiator - SessionTimer started
+2026-02-28 16:21:48 [NioProcessor-4] INFO  quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:52999
+2026-02-28 16:21:48 [QFJ Message Processor] INFO  quickfix.SocketInitiator - Started QFJ Message Processor

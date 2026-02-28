@@ -1,0 +1,101 @@
+20260228-10:20:52: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:20:52: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:20:52: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:20:52: Exception during connection to /127.0.0.1:9878 (Next retry in 30000 milliseconds)
+java.util.concurrent.RejectedExecutionException: Task org.apache.mina.util.NamePreservingRunnable@7bc211c1 rejected from java.util.concurrent.ThreadPoolExecutor@3c94393e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1365)
+	at org.apache.mina.core.service.AbstractIoService.executeWorker(AbstractIoService.java:483)
+	at org.apache.mina.core.service.AbstractIoService.executeWorker(AbstractIoService.java:475)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.startupWorker(AbstractPollingIoConnector.java:413)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.connect0(AbstractPollingIoConnector.java:395)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:331)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:207)
+	at quickfix.mina.initiator.IoSessionInitiator$ConnectTask.connect(IoSessionInitiator.java:223)
+	at quickfix.mina.initiator.IoSessionInitiator$ConnectTask.run(IoSessionInitiator.java:208)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+20260228-10:24:25: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:24:25: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:24:25: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:24:25: Exception during connection to /127.0.0.1:9878 (Next retry in 30000 milliseconds)
+java.util.concurrent.RejectedExecutionException: Task org.apache.mina.util.NamePreservingRunnable@1bb1df7d rejected from java.util.concurrent.ThreadPoolExecutor@5d12d80f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1365)
+	at org.apache.mina.core.service.AbstractIoService.executeWorker(AbstractIoService.java:483)
+	at org.apache.mina.core.service.AbstractIoService.executeWorker(AbstractIoService.java:475)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.startupWorker(AbstractPollingIoConnector.java:413)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.connect0(AbstractPollingIoConnector.java:395)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:331)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:207)
+	at quickfix.mina.initiator.IoSessionInitiator$ConnectTask.connect(IoSessionInitiator.java:223)
+	at quickfix.mina.initiator.IoSessionInitiator$ConnectTask.run(IoSessionInitiator.java:208)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+20260228-10:25:19: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:25:19: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:25:19: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:25:19: MINA session created: local=/127.0.0.1:52262, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-10:25:19: Disconnecting: Encountered END_OF_STREAM
+20260228-10:25:53: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:25:53: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:25:53: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:25:53: MINA session created: local=/127.0.0.1:52263, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-10:25:53: Disconnecting: Encountered END_OF_STREAM
+20260228-10:27:47: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:27:47: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:27:47: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:27:47: MINA session created: local=/127.0.0.1:57449, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-10:27:47: Disconnecting: Encountered END_OF_STREAM
+20260228-10:41:35: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:41:35: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:41:35: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:41:35: java.net.ConnectException during connection to /127.0.0.1:9878: java.net.ConnectException: Connection refused: getsockopt (Next retry in 30000 milliseconds)
+20260228-10:41:47: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:41:47: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:41:47: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:41:47: java.net.ConnectException during connection to /127.0.0.1:9878: java.net.ConnectException: Connection refused: getsockopt (Next retry in 30000 milliseconds)
+20260228-10:41:53: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:41:53: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:41:54: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:41:54: java.net.ConnectException during connection to /127.0.0.1:9878: java.net.ConnectException: Connection refused: getsockopt (Next retry in 30000 milliseconds)
+20260228-10:45:06: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:45:06: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:45:06: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:45:06: Exception during connection to /127.0.0.1:9878 (Next retry in 30000 milliseconds)
+java.util.concurrent.RejectedExecutionException: Task org.apache.mina.util.NamePreservingRunnable@14488d93 rejected from java.util.concurrent.ThreadPoolExecutor@13c8a322[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2065)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:833)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1365)
+	at org.apache.mina.core.service.AbstractIoService.executeWorker(AbstractIoService.java:483)
+	at org.apache.mina.core.service.AbstractIoService.executeWorker(AbstractIoService.java:475)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.startupWorker(AbstractPollingIoConnector.java:413)
+	at org.apache.mina.core.polling.AbstractPollingIoConnector.connect0(AbstractPollingIoConnector.java:395)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:331)
+	at org.apache.mina.core.service.AbstractIoConnector.connect(AbstractIoConnector.java:207)
+	at quickfix.mina.initiator.IoSessionInitiator$ConnectTask.connect(IoSessionInitiator.java:223)
+	at quickfix.mina.initiator.IoSessionInitiator$ConnectTask.run(IoSessionInitiator.java:208)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+20260228-10:50:05: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260228-10:50:05: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260228-10:50:05: Configured socket addresses for session: [/127.0.0.1:9878]
+20260228-10:50:05: MINA session created: local=/127.0.0.1:63234, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260228-10:50:05: Disconnecting: Encountered END_OF_STREAM
