@@ -2,8 +2,8 @@ package com.yash.fixhub.application;
 
 import com.yash.fixhub.core.FixLogUtil;
 import com.yash.fixhub.core.MessageDispatcher;
-import com.yash.fixhub.grammar.FixMessageConverter;
-import com.yash.fixhub.session.SessionRegistry;
+import com.yash.fixhub.session.SessionContext;
+import com.yash.fixhub.session.SessionManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import quickfix.*;
@@ -11,14 +11,15 @@ import quickfix.field.MsgType;
 
 public class FixHubApplication implements Application {
 
-    private static final Logger log = LoggerFactory.getLogger(FixHubApplication.class);
+    private static final Logger log =
+            LoggerFactory.getLogger(FixHubApplication.class);
 
-    private final SessionRegistry sessionRegistry;
+    private final SessionManager sessionManager;
     private final MessageDispatcher dispatcher;
 
-    public FixHubApplication(SessionRegistry sessionRegistry) {
-        this.sessionRegistry = sessionRegistry;
-        this.dispatcher = new MessageDispatcher(sessionRegistry);
+    public FixHubApplication(SessionManager sessionManager) {
+        this.sessionManager = sessionManager;
+        this.dispatcher = new MessageDispatcher(sessionManager);
     }
 
     @Override
@@ -28,13 +29,34 @@ public class FixHubApplication implements Application {
 
     @Override
     public void onLogon(SessionID sessionId) {
-        sessionRegistry.register(sessionId);
-        log.info("Logon: {}", sessionId);
+
+        String counterparty = resolveCounterparty(sessionId);
+
+        SessionContext context =
+                sessionManager.getSession(counterparty);
+
+        if (context == null) {
+            log.error("SessionContext missing for {}", counterparty);
+            return;
+        }
+
+        context.setSessionID(sessionId);
+
+        log.info("Logon successful and bound for {}", counterparty);
     }
 
     @Override
     public void onLogout(SessionID sessionId) {
-        sessionRegistry.deregister(sessionId);
+
+        String counterparty = resolveCounterparty(sessionId);
+
+        SessionContext context =
+                sessionManager.getSession(counterparty);
+
+        if (context != null) {
+            context.setSessionID(null);
+        }
+
         log.info("Logout: {}", sessionId);
     }
 
@@ -49,7 +71,8 @@ public class FixHubApplication implements Application {
 
         log.debug("FromAdmin: {}", FixLogUtil.pretty(message));
 
-        if (MsgType.LOGON.equals(message.getHeader().getString(MsgType.FIELD))) {
+        if (MsgType.LOGON.equals(
+                message.getHeader().getString(MsgType.FIELD))) {
             log.info("Received Logon request from {}", sessionId);
         }
     }
@@ -61,17 +84,29 @@ public class FixHubApplication implements Application {
     }
 
     @Override
-    public void fromApp(Message message, SessionID sessionID)
+    public void fromApp(Message message, SessionID sessionId)
             throws FieldNotFound, UnsupportedMessageType, IncorrectTagValue {
 
         log.info("Incoming App Message from {}: {}",
-                sessionID,
+                sessionId,
                 FixLogUtil.pretty(message));
 
         try {
-            dispatcher.dispatch(message, sessionID);
+            dispatcher.dispatch(message, sessionId);
         } catch (Exception e) {
-            log.error("Error processing message from session {}", sessionID, e);
+            log.error("Error processing message from session {}", sessionId, e);
+        }
+    }
+
+    /**
+     * Resolve actual counterparty compId dynamically
+     */
+    private String resolveCounterparty(SessionID sessionId) {
+
+        if ("FIXHUB".equals(sessionId.getSenderCompID())) {
+            return sessionId.getTargetCompID();
+        } else {
+            return sessionId.getSenderCompID();
         }
     }
 }

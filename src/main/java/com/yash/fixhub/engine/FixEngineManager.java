@@ -1,33 +1,37 @@
 package com.yash.fixhub.engine;
+
 import com.yash.fixhub.application.FixHubApplication;
+import com.yash.fixhub.broker.FixBrokerApplication;
 import com.yash.fixhub.client.FixClientApplication;
-import com.yash.fixhub.session.SessionRegistry;
-import quickfix.Application;
-import quickfix.DefaultMessageFactory;
-import quickfix.FileLogFactory;
-import quickfix.FileStoreFactory;
-import quickfix.MessageFactory;
-import quickfix.MessageStoreFactory;
-import quickfix.SessionSettings;
-import quickfix.SocketAcceptor;
-import quickfix.SocketInitiator;
+import com.yash.fixhub.session.SessionManager;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import quickfix.*;
+
 public class FixEngineManager {
-	private static final Logger log =
-	        LoggerFactory.getLogger(FixEngineManager.class);
+
+    private static final Logger log =
+            LoggerFactory.getLogger(FixEngineManager.class);
+
     private SocketAcceptor acceptor;
-    private SocketInitiator initiator;
+    private SocketInitiator clientInitiator;
     private SocketInitiator brokerInitiator;
-    private final SessionRegistry sessionRegistry = new SessionRegistry();
+
+    private final SessionManager sessionManager = new SessionManager();
+
+    /**
+     * Start HUB (Acceptor)
+     */
     public void startServer() throws Exception {
 
         SessionSettings settings = new SessionSettings("fixhub.cfg");
-        Application application = new FixHubApplication(sessionRegistry);
+
+        Application application = new FixHubApplication(sessionManager);
 
         MessageStoreFactory storeFactory = new FileStoreFactory(settings);
-        FileLogFactory logFactory = new FileLogFactory(settings);
+        LogFactory logFactory = new FileLogFactory(settings);
         MessageFactory messageFactory = new DefaultMessageFactory();
 
         acceptor = new SocketAcceptor(
@@ -39,35 +43,38 @@ public class FixEngineManager {
         );
 
         acceptor.start();
-        log.info("FIX Server started...");
+        log.info("FIX HUB started...");
     }
 
+    /**
+     * Start CLIENT (Initiator)
+     */
     public void startClient() throws Exception {
 
         SessionSettings settings = new SessionSettings("fixclient.cfg");
-        Application application = new com.yash.fixhub.client.FixClientApplication();
 
-        MessageStoreFactory storeFactory = new FileStoreFactory(settings);
-        FileLogFactory logFactory = new FileLogFactory(settings);
-        MessageFactory messageFactory = new DefaultMessageFactory();
+        Application application = new FixClientApplication();
 
-        initiator = new SocketInitiator(
+        clientInitiator = new SocketInitiator(
                 application,
-                storeFactory,
+                new FileStoreFactory(settings),
                 settings,
-                logFactory,
-                messageFactory
+                new FileLogFactory(settings),
+                new DefaultMessageFactory()
         );
 
-        initiator.start();
-        log.info("FIX Client started...");
+        clientInitiator.start();
+        log.info("CLIENT session started...");
     }
-    
+
+    /**
+     * Start BROKER (Initiator)
+     */
     public void startBroker() throws Exception {
 
         SessionSettings settings = new SessionSettings("fixbroker.cfg");
 
-        Application application = new FixClientApplication(); // temporary reuse
+        Application application = new FixBrokerApplication();
 
         brokerInitiator = new SocketInitiator(
                 application,
@@ -78,13 +85,20 @@ public class FixEngineManager {
         );
 
         brokerInitiator.start();
-        log.info("BROKER1 session started...");
+        log.info("BROKER session started...");
     }
-    
+
+    /**
+     * Stop all FIX engines
+     */
     public void stopAll() throws Exception {
 
-        if (initiator != null) {
-            initiator.stop();
+        if (clientInitiator != null) {
+            clientInitiator.stop();
+        }
+
+        if (brokerInitiator != null) {
+            brokerInitiator.stop();
         }
 
         if (acceptor != null) {
@@ -92,5 +106,9 @@ public class FixEngineManager {
         }
 
         log.info("All FIX engines stopped.");
+    }
+
+    public SessionManager getSessionManager() {
+        return sessionManager;
     }
 }

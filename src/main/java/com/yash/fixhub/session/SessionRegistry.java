@@ -12,19 +12,15 @@ public class SessionRegistry {
     private static final Logger log =
             LoggerFactory.getLogger(SessionRegistry.class);
 
-    // Key = logical counterparty CompID
     private final Map<String, SessionID> sessionMap = new ConcurrentHashMap<>();
 
+    /**
+     * Register session (HUB is Acceptor)
+     */
     public void register(SessionID sessionID) {
 
-        String counterpartyCompID;
-
-        // If we are acceptor, counterparty is TargetCompID
-        if ("FIXHUB".equals(sessionID.getSenderCompID())) {
-            counterpartyCompID = sessionID.getTargetCompID();
-        } else {
-            counterpartyCompID = sessionID.getSenderCompID();
-        }
+        // In acceptor, counterparty is always TargetCompID
+        String counterpartyCompID = sessionID.getTargetCompID();
 
         sessionMap.put(counterpartyCompID, sessionID);
 
@@ -33,13 +29,7 @@ public class SessionRegistry {
 
     public void deregister(SessionID sessionID) {
 
-        String counterpartyCompID;
-
-        if ("FIXHUB".equals(sessionID.getSenderCompID())) {
-            counterpartyCompID = sessionID.getTargetCompID();
-        } else {
-            counterpartyCompID = sessionID.getSenderCompID();
-        }
+        String counterpartyCompID = sessionID.getTargetCompID();
 
         sessionMap.remove(counterpartyCompID);
 

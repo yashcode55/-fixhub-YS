@@ -12,3 +12,6 @@ logs/
 # OS
 Thumbs.db
 oldlogs/
+logs/
+store/
+target/

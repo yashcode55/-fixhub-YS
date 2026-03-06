@@ -8,16 +8,15 @@ import com.yash.fixhub.engine.FixEngineManager;
 
 	public class FixHubLauncher {
 		
-		private static final Logger log =
-		        LoggerFactory.getLogger(FixHubApplication.class);
+		private static final Logger log = LoggerFactory.getLogger(FixHubApplication.class);
 		
 	    public static void main(String[] args) throws Exception {
 
 	        FixEngineManager manager = new FixEngineManager();
 
-	        manager.startServer();
-	        manager.startClient();
-	        manager.startBroker();
+	        //manager.startServer();
+	        //manager.startClient();
+	        //manager.startBroker();
 
 	        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 	            try {
