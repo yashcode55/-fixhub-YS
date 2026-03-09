@@ -3,6 +3,7 @@ target/
 
 # Logs
 logs/
+log/
 
 # Eclipse
 .project
