@@ -1,9 +1,13 @@
 # Maven
-target/
+/target/
 
 # Logs
-logs/
-log/
+/logs/
+/log/
+*.log
+
+# FIX Store files
+/store/
 
 # Eclipse
 .project
@@ -12,8 +16,3 @@ log/
 
 # OS
 Thumbs.db
-oldlogs/
-.logs/
-.store/
-.log/
-target/
