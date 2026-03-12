@@ -6,17 +6,22 @@ import com.yash.fixhub.application.FixHubApplication;
 import com.yash.fixhub.core.*;
 import com.yash.fixhub.engine.FixEngineManager;
 
+/**
+ * @deprecated This launcher is replaced by DevBootstrapRunner.
+ * Old bootstrap flow will be removed in future versions.
+ */
+@Deprecated
 	public class FixHubLauncher {
 		
 		private static final Logger log = LoggerFactory.getLogger(FixHubApplication.class);
 		
 	    public static void main(String[] args) throws Exception {
-
+	    /*
 	        FixEngineManager manager = new FixEngineManager();
 
 	        //manager.startServer();
-	        //manager.startClient();
-	        //manager.startBroker();
+	       // manager.startClient();
+	       // manager.startBroker();
 
 	        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 	            try {
@@ -27,5 +32,6 @@ import com.yash.fixhub.engine.FixEngineManager;
 	        }));
 
 	        Thread.sleep(Long.MAX_VALUE);
+	        */
 	    }
 }

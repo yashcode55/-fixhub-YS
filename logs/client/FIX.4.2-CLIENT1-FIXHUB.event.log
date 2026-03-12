@@ -1,0 +1,6 @@
+20260312-17:13:37: Session FIX.4.2:CLIENT1->FIXHUB schedule is daily, 00:00:00-UTC - 23:59:59-UTC
+20260312-17:13:37: Created session: FIX.4.2:CLIENT1->FIXHUB
+20260312-17:13:37: Configured socket addresses for session: [/127.0.0.1:9878]
+20260312-17:13:37: MINA session created: local=/127.0.0.1:56032, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:9878
+20260312-17:13:38: Initiated logon request
+20260312-17:13:38: Received logon

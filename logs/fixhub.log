@@ -1,0 +1,144 @@
+2026-03-12 22:43:36.836 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:43:36.880 INFO  [main] com.yash.fixhub.application.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT1
+2026-03-12 22:43:36.880 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->BROKER1] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:43:36.884 INFO  [main] com.yash.fixhub.application.FixHubApplication - Session created: FIX.4.2:FIXHUB->BROKER1
+2026-03-12 22:43:36.885 INFO  [main] quickfix.SocketAcceptor - SessionTimer started
+2026-03-12 22:43:37.146 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-12 22:43:37.146 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-12 22:43:37.147 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-12 22:43:37.166 INFO  [main] quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT1, FIX.4.2:FIXHUB->BROKER1]
+2026-03-12 22:43:37.168 INFO  [main] com.yash.fixhub.engine.FixEngineManager - FIX HUB started...
+2026-03-12 22:43:37.168 INFO  [QFJ Message Processor] quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-12 22:43:37.172 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:CLIENT1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:43:37.178 INFO  [main] com.yash.fixhub.client.FixClientApplication - [CLIENT] Session created: FIX.4.2:CLIENT1->FIXHUB
+2026-03-12 22:43:37.178 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-12 22:43:37.178 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-12 22:43:37.178 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-12 22:43:37.202 INFO  [main] quickfix.SocketInitiator - SessionTimer started
+2026-03-12 22:43:37.202 INFO  [main] com.yash.fixhub.engine.FixEngineManager - CLIENT session started...
+2026-03-12 22:43:37.202 INFO  [QFJ Message Processor] quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-12 22:43:37.215 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:BROKER1->FIXHUB] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:43:37.217 INFO  [NioProcessor-2] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56032
+2026-03-12 22:43:37.226 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-12 22:43:37.226 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-12 22:43:37.226 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-12 22:43:37.242 INFO  [main] quickfix.SocketInitiator - SessionTimer started
+2026-03-12 22:43:37.242 INFO  [main] com.yash.fixhub.engine.FixEngineManager - BROKER session started...
+2026-03-12 22:43:37.242 INFO  [QFJ Message Processor] quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-12 22:43:37.243 INFO  [NioProcessor-4] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9878, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56033
+2026-03-12 22:43:38.275 INFO  [QFJ Timer] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=68|35=A|34=1|49=CLIENT1|52=20260312-17:13:38.242|56=FIXHUB|98=0|108=30|10=183|
+2026-03-12 22:43:38.291 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Received Logon request from FIX.4.2:FIXHUB->CLIENT1
+2026-03-12 22:43:38.292 ERROR [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - SessionContext missing for CLIENT1
+2026-03-12 22:43:38.292 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Received Logon request from FIX.4.2:FIXHUB->BROKER1
+2026-03-12 22:43:38.292 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.2|9=68|35=A|34=1|49=FIXHUB|52=20260312-17:13:38.291|56=CLIENT1|98=0|108=30|10=187|
+2026-03-12 22:43:38.293 ERROR [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - SessionContext missing for BROKER1
+2026-03-12 22:43:38.293 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Client Logged On: FIX.4.2:CLIENT1->FIXHUB
+2026-03-12 22:43:38.322 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToApp: 8=FIX.4.2|9=122|35=D|34=2|49=CLIENT1|52=20260312-17:13:38.322|56=FIXHUB|11=ORDER-1|21=1|38=100|40=1|54=1|55=AAPL|60=20260312-17:13:38.318|10=149|
+2026-03-12 22:43:38.322 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - Sent NewOrderSingle from Client
+2026-03-12 22:43:38.325 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Incoming App Message from FIX.4.2:FIXHUB->CLIENT1: 8=FIX.4.2|9=122|35=D|34=2|49=CLIENT1|52=20260312-17:13:38.322|56=FIXHUB|11=ORDER-1|21=1|38=100|40=1|54=1|55=AAPL|60=20260312-17:13:38.318|10=149|
+2026-03-12 22:43:38.326 ERROR [QFJ Message Processor] com.yash.fixhub.routing.RoutingEngine - No SessionContext found for CLIENT1
+2026-03-12 22:44:08.893 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] FromAdmin: 8=FIX.4.2|9=56|35=0|34=2|49=FIXHUB|52=20260312-17:14:08.887|56=CLIENT1|10=152|
+2026-03-12 22:44:08.894 INFO  [QFJ Message Processor] com.yash.fixhub.client.FixClientApplication - [CLIENT] ToAdmin: 8=FIX.4.2|9=56|35=0|34=3|49=CLIENT1|52=20260312-17:14:08.893|56=FIXHUB|10=150|
+2026-03-12 22:54:52.877 INFO  [main] com.yash.fixhub.session.SessionManager - Session metadata added for CLIENT_A
+2026-03-12 22:54:52.881 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Registered session CLIENT_A as BUY
+2026-03-12 22:54:52.882 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ===== FIX SESSION CONFIG LOADED =====
+2026-03-12 22:54:52.882 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - File: config/sessions/buy_CLIENT_A.ini
+2026-03-12 22:54:52.882 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Role: BUY
+2026-03-12 22:54:52.882 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ConnectionType: acceptor
+2026-03-12 22:54:52.882 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - BeginString: FIX.4.2
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - SenderCompID: FIXHUB
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - TargetCompID: CLIENT_A
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Host: null
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Port: 9878
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Heartbeat: 30
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - RoutingMode: STATIC
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - DefaultRoute: EXCHANGE_NSE
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - =====================================
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.session.SessionManager - Session metadata added for CLIENT_B
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Registered session CLIENT_B as BUY
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ===== FIX SESSION CONFIG LOADED =====
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - File: config/sessions/buy_CLIENT_B.ini
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Role: BUY
+2026-03-12 22:54:52.883 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ConnectionType: acceptor
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - BeginString: FIX.4.2
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - SenderCompID: FIXHUB
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - TargetCompID: CLIENT_B
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Host: null
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Port: 9878
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Heartbeat: 30
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - RoutingMode: STATIC
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - DefaultRoute: EXCHANGE_BSE
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - =====================================
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.session.SessionManager - Session metadata added for EXCHANGE_NSE
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Registered session EXCHANGE_NSE as SELL
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ===== FIX SESSION CONFIG LOADED =====
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - File: config/sessions/sell_EXCHANGE_NSE.ini
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Role: SELL
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ConnectionType: acceptor
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - BeginString: FIX.4.2
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - SenderCompID: FIXHUB
+2026-03-12 22:54:52.884 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - TargetCompID: EXCHANGE_NSE
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Host: 127.0.0.1
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Port: 9999
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Heartbeat: 30
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - RoutingMode: null
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - DefaultRoute: null
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - =====================================
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.session.SessionManager - Session metadata added for EXCHANGE_BSE
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Registered session EXCHANGE_BSE as SELL
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ===== FIX SESSION CONFIG LOADED =====
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - File: config/sessions/sell_EXCHANGE_BSE.ini
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Role: SELL
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - ConnectionType: initiator
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - BeginString: FIX.4.2
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - SenderCompID: FIXHUB
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - TargetCompID: EXCHANGE_BSE
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Host: 127.0.0.1
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Port: 9999
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Heartbeat: 30
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - RoutingMode: null
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - DefaultRoute: null
+2026-03-12 22:54:52.885 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - =====================================
+2026-03-12 22:54:53.436 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT_A] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:54:53.469 INFO  [main] com.yash.fixhub.application.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT_A
+2026-03-12 22:54:53.470 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->CLIENT_B] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:54:53.474 INFO  [main] com.yash.fixhub.application.FixHubApplication - Session created: FIX.4.2:FIXHUB->CLIENT_B
+2026-03-12 22:54:53.474 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->EXCHANGE_NSE] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:54:53.487 INFO  [main] com.yash.fixhub.application.FixHubApplication - Session created: FIX.4.2:FIXHUB->EXCHANGE_NSE
+2026-03-12 22:54:53.490 INFO  [main] quickfix.SocketAcceptor - SessionTimer started
+2026-03-12 22:54:53.662 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-12 22:54:53.662 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-12 22:54:53.662 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-12 22:54:53.678 INFO  [main] quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9878 for session(s) [FIX.4.2:FIXHUB->CLIENT_A, FIX.4.2:FIXHUB->CLIENT_B]
+2026-03-12 22:54:53.701 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-12 22:54:53.702 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-12 22:54:53.702 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-12 22:54:53.702 INFO  [main] quickfix.SocketAcceptor - Listening for connections at 0.0.0.0/0.0.0.0:9999 for session(s) [FIX.4.2:FIXHUB->EXCHANGE_NSE]
+2026-03-12 22:54:53.704 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - Shared SocketAcceptor started for all client sessions
+2026-03-12 22:54:53.704 INFO  [QFJ Message Processor] quickfix.SocketAcceptor - Started QFJ Message Processor
+2026-03-12 22:54:53.705 INFO  [main] quickfix.DefaultSessionSchedule - [FIX.4.2:FIXHUB->EXCHANGE_BSE] daily, 00:00:00-UTC - 23:59:59-UTC
+2026-03-12 22:54:53.709 INFO  [main] com.yash.fixhub.application.FixHubApplication - Session created: FIX.4.2:FIXHUB->EXCHANGE_BSE
+2026-03-12 22:54:53.709 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketTcpNoDelay=true
+2026-03-12 22:54:53.709 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWrites=false
+2026-03-12 22:54:53.709 INFO  [main] quickfix.mina.NetworkingOptions - Socket option: SocketSynchronousWriteTimeout=30000
+2026-03-12 22:54:53.731 INFO  [main] quickfix.SocketInitiator - SessionTimer started
+2026-03-12 22:54:53.732 INFO  [main] com.yash.fixhub.service.SessionBootstrapService - SocketInitiator started for exchange sessions
+2026-03-12 22:54:53.732 INFO  [QFJ Message Processor] quickfix.SocketInitiator - Started QFJ Message Processor
+2026-03-12 22:54:53.741 INFO  [NioProcessor-15] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9999, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:60599
+2026-03-12 22:54:54.820 ERROR [NioProcessor-15] quickfix.mina.acceptor.AcceptorIoHandler - Disconnecting; received message for unknown session: 8=FIX.4.29=7335=A34=149=FIXHUB52=20260312-17:24:54.77256=EXCHANGE_BSE98=0108=3010=071
+2026-03-12 22:54:54.840 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Logout: FIX.4.2:FIXHUB->EXCHANGE_BSE
+2026-03-12 22:55:24.059 INFO  [NioProcessor-17] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9999, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:60601
+2026-03-12 22:55:24.739 ERROR [NioProcessor-17] quickfix.mina.acceptor.AcceptorIoHandler - Disconnecting; received message for unknown session: 8=FIX.4.29=7335=A34=249=FIXHUB52=20260312-17:25:24.73556=EXCHANGE_BSE98=0108=3010=069
+2026-03-12 22:55:24.739 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Logout: FIX.4.2:FIXHUB->EXCHANGE_BSE
+2026-03-12 22:55:54.309 INFO  [NioProcessor-19] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9999, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56657
+2026-03-12 22:55:54.739 ERROR [NioProcessor-19] quickfix.mina.acceptor.AcceptorIoHandler - Disconnecting; received message for unknown session: 8=FIX.4.29=7335=A34=349=FIXHUB52=20260312-17:25:54.73956=EXCHANGE_BSE98=0108=3010=077
+2026-03-12 22:55:54.739 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Logout: FIX.4.2:FIXHUB->EXCHANGE_BSE
+2026-03-12 22:56:24.530 INFO  [NioProcessor-21] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9999, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56659
+2026-03-12 22:56:24.747 ERROR [NioProcessor-21] quickfix.mina.acceptor.AcceptorIoHandler - Disconnecting; received message for unknown session: 8=FIX.4.29=7335=A34=449=FIXHUB52=20260312-17:26:24.74556=EXCHANGE_BSE98=0108=3010=073
+2026-03-12 22:56:24.747 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Logout: FIX.4.2:FIXHUB->EXCHANGE_BSE
+2026-03-12 22:56:54.794 INFO  [NioProcessor-23] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9999, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:56668
+2026-03-12 22:56:55.739 ERROR [NioProcessor-23] quickfix.mina.acceptor.AcceptorIoHandler - Disconnecting; received message for unknown session: 8=FIX.4.29=7335=A34=549=FIXHUB52=20260312-17:26:55.73856=EXCHANGE_BSE98=0108=3010=080
+2026-03-12 22:56:55.740 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Logout: FIX.4.2:FIXHUB->EXCHANGE_BSE
+2026-03-12 22:57:24.980 INFO  [NioProcessor-25] quickfix.mina.acceptor.AcceptorIoHandler - MINA session created: local=/127.0.0.1:9999, class org.apache.mina.transport.socket.nio.NioSocketSession, remote=/127.0.0.1:61598
+2026-03-12 22:57:25.747 ERROR [NioProcessor-25] quickfix.mina.acceptor.AcceptorIoHandler - Disconnecting; received message for unknown session: 8=FIX.4.29=7335=A34=649=FIXHUB52=20260312-17:27:25.74056=EXCHANGE_BSE98=0108=3010=072
+2026-03-12 22:57:25.748 INFO  [QFJ Message Processor] com.yash.fixhub.application.FixHubApplication - Logout: FIX.4.2:FIXHUB->EXCHANGE_BSE

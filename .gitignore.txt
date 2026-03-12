@@ -1,18 +1,15 @@
-# Maven
-/target/
-
-# Logs
-/logs/
-/log/
+# Runtime logs
+logs/
+log/
 *.log
 
-# FIX Store files
-/store/
+# FIX session store
+store/
+
+# Maven build
+target/
 
 # Eclipse
 .project
 .classpath
 .settings/
-
-# OS
-Thumbs.db
